@@ -1,6 +1,17 @@
 {
+    "browser_action": {
+        "browser_style": true,
+        "default_icon":{
+            "16":"icon32.png",
+            "32":"icon32.png",
+            "64":"icon.png",
+            "128":"icon.png"
+        },
+        "default_title": "ShowPassword",
+        "default_popup": "popup.html"
+    },
     "name": "ShowPassword",
-    "version": "1.1.6",
+    "version": "1.1.7.1",
     "manifest_version": 2,
     "default_locale": "en",
     "description": "__MSG_extension_description__",
@@ -16,6 +27,8 @@
         "32": "icon32.png",
         "16": "icon32.png"
     },
-    "options_page": "options.html",
+    "options_ui": {
+        "page": "options.html"
+    },
     "permissions": ["storage"]
 }
